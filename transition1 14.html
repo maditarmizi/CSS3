@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Transition1</title>
+  <style>
+    body {
+      background-color: lightgreen;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 355px;
+      border: 5px solid black;
+    }
+    .kotak {
+      width: 50px;
+      height: 50px;
+      background-color: salmon;
+      transition:  1s;
+    }
+    .container:hover .kotak {
+      transform: rotate(180deg);
+      background-color: lightskyblue;
+      margin-left: 310px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Transition Pada CSS3</h3>
+  <p>Properti Transition/Perpindahan memungkinkan kita dapat mengubah nilai dari properti HTML <b>secara Halus</b> di dalam CSS3 ada 2 property yang mengubah nilainya secara Halus yaitu Transition & Animation, tapi yang membedakan keadan awal & keadan akhir. kalau transition hanya mempunyai nilai keadaan awal & akhir, tapi kalau animation punya nilai keadaan awal & akhir tetapi mempunyai keadaan diantaranya/mempunya 2 keadaan lebih. Cara penulisan syntaxnya berikut ini <br> transition: (properti) (durasi => s/ms) (fungsi) (delay);. properti, all, nama properti, none</p>
+  <b>Animatable Properties</b>
+  <ul>
+    <li>background-color</li>
+    <li>background-position</li>
+    <li>background-size</li>
+    <li>border</li>
+    <li>color</li>
+    <li>filter</li>
+    <li>font-size</li>
+    <li>line-height</li>
+    <li>top left bottom right</li>
+    <li>margin, padding</li>
+    <li>width, height</li>
+    <li>opacity</li>
+    <li>transform</li>
+    <li>word-spacing</li>
+    <li>letter-spacing</li>
+  </ul>
+  <b>Non-Animatable Properties</b>
+  <ul>
+    <li>font-family</li>
+    <li>display</li>
+    <li>position</li>
+  </ul>
+  <div class="container">
+  <div class="kotak"></div>
+  </div>
+</body>
+</html>

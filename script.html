@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerry</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container .gallery li img {
+        width: 120px;
+        height: 120px;
+} 
+/* font */
+@font-face {
+        font-family: 'open_sansreguler';
+        src: url('OpenSans-Regular-webfont.woff') format('woff');
+}
+/* style utama */
+body {
+        font: 18/36 'open_sansreguler', 'Arial Narrow', arial, sans-serif;
+        background-color: #ddd;
+}
+h1 {
+        font-size: 80px;
+        margin: 50px 0;
+        text-align: center;
+        text-shadow: 1px 1px 1px white;
+}
+.container {
+        width: 600px;
+        background-color: white;
+        margin: auto;
+        padding: 30px;
+        box-shadow: 0 0 3px 3px rgba(0,0,0,.3);
+        border-radius: 5px;
+}
+.gallery li {
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        border: 5px solid #666;
+        float: left;
+        margin-right: 20px;
+        position: relative;
+
+}
+.gallery li,
+.gallery li img,
+.gallery li span {
+        border-radius: 50%;
+}
+.gallery li span {
+        display: block;
+        width: 120px;
+        height: 120px;
+        background-color: rgba(200,200,200,.5);
+        position: absolute;
+        top: 0;
+        text-align: center;
+        line-height: 120px;
+        color: #333;
+        text-shadow: 1px 1px 1px #ddd;
+        opacity: 0;
+        transform: scale(0) rotate(0);
+        transition: .3s;
+}
+.gallery li a:hover span {
+        opacity: 1;
+        transform: scale(1) rotate(360deg);
+}
+.clear {
+        clear: both;
+}
+/* overlay bab 2 */
+.overlay {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0);
+        z-index: 9999;
+        transition: .8s;
+        text-align: center;
+        padding: 100px 0;
+}
+.overlay:target {
+        width: auto;
+        height: auto;
+        bottom: 0;
+        right: 0;
+        background: rgba(0,0,0,.7);       
+}
+.overlay img {
+        width: 600px;
+        height: 800px;
+        max-height: 100%;
+        box-shadow: 2px 2px 7px rgba(0,0,0,.5);
+}
+.overlay:target {
+        animation: zoom 1s;
+}
+.overlay .close {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        margin-left: -20px;
+        color: white;
+        text-decoration: none;
+        background-color: black;
+        border: 1px solid white;
+        line-height: 14px;
+        padding: 5px;
+        opacity: 0;
+
+}
+.overlay:target .close {
+        animation: slideDown .5s .5s forwards;
+}
+/* animation */
+@keyframes zoom {
+        0% {
+                transform: scale(0);
+                opacity: 0;
+        }
+        100% {
+                transform: scale(1);
+                opacity: 1;
+        }
+}
+
+@keyframes slideDown {
+        0% {
+                opacity: 0;
+                margin-top: -20px;
+        }
+        100% {
+                opacity: 1;
+                margin-top: 0;
+        }
+}
+ 
+    </style>
+</head>
+<body>
+   <h1>The Galerry</h1>
+   
+   <div class="container">
+       <ul class="gallery">
+           <li>
+               <a href="#gambar-1">
+                <img src="ayam.png" alt="ayam">
+                <span>Fried Chiken</span>
+               </a>
+
+               <div class="overlay" id="gambar-1">
+                   <a href="#" class="close">x close</a>
+                   <img src="dist/web.jpg" alt="ayam panggang">
+               </div>
+
+           </li>
+           <li>
+            <a href="">
+             <img src="ayam.png" alt="ayam">
+             <span>Fried Chiken</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+             <img src="ayam.png" alt="ayam">
+             <span>Fried Chiken</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+             <img src="ayam.png" alt="ayam">
+             <span>Fried Chiken</span>
+            </a>
+        </li>
+           <div class="clear"></div>
+       </ul>
+
+
+       
+   </div>
+</body>
+</html>

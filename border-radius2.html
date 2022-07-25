@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Border Radius</title>
+  <style>
+    h3 {
+      text-align: center;
+    }
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: salmon;
+      /*background-image: url(adi.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;*/
+      border-radius: 0 50% 0 50%;
+      text-align: center;
+      line-height: 200px;
+      overflow: hidden;
+    }
+    div img {
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Bab 2 | Border Radius</h3>
+  <h5>Apa sih border radius itu?</h5>
+  <p>Border Radius adalah properti CSS3 yang fungsinya adalah membuat kotak yang kita punya, itu ujung" nya menjadi tumpul. semakin besar border radius yang kita berikan maka ujung dari kotak akan semakin tumpul. Rumus, jika ingin box nya menjadi bulat maka border radiusnya sesuaikan dari setengah width & height. contoh : width 200px, height 200px.. maka border radiusnya adalah 100px. ada cara yang paling efektif yaitu gunakan satuan 50%. jika ingin sudutnya dimodifikasi maka gunakan properti di bawah ini.</p>
+  <ul>
+    <li>border-top-right-radius: </li>
+    <li>border-bottom-right-radius: </li>
+    <li>border-bottom-left-radius: </li>
+    <li>border-top-left-radius: </li>
+  </ul>
+  <p>adapun cara singkat codinganya yaitu border-radius: 0 50% 0 50%; . cara baca : atas kiri, atas kanan, bawah kanan, bawah kiri</p>
+  <!-- Contoh codingan -->
+  <div>
+    <img src="adi.jpg" alt="logo">
+  </div>
+  
+</body>
+</html>

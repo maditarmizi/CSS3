@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Font Face</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower">
+  <style>
+    h1 {
+      font-size: 100px;
+      text-align: center;
+      font-family: 'Indie Flower', cursive;
+      color: white;
+      text-shadow: 0px 2px 1px black;
+    }
+    .warna {
+      color: red;
+    }
+    @font-face {
+      font-family: "Alex Brush";
+      src: url('AlexBrush-Regular.ttf') format('truetype');
+    }
+    h2 {
+      font-size: 80px;
+      text-align: center;
+      font-family: "Alex Brush", arial;
+      color: white;
+      text-shadow: 0px 2px 1px red;
+    }
+    ol li a {
+      text-decoration: none;
+      color: salmon;
+      padding: 2px;
+    }
+    ol li a:hover {
+      background-color: lightskyblue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h4>Bab 9 Materi CSS | Font Face & Penggunaan nya</h4>
+  <h1>Hello World</h1>
+  <p>font-family: "Arial Narrow", (arial, sans-serif = fallback);</p>
+  <p>Font harus ada di sistem operasi client/user. Contoh Google Fonts <a href="https://fonts.google.com"> Klik</a></p>
+  <p>jika google fonts tidak cukup? maka gunakan @font-face</p>
+  <p>@font-face {
+    <p>font-family: 'namaFontBaru';</p>
+    <p>src: ('lokasi file/fontBaru.eot');</p>
+    <p>src: ('lokasi file/fontBaru.eot?#iefix') format('embedded-opentype'), <br>
+            ('lokasi file/fontBaru.woff2') format('woff2'), <br>
+            ('lokasi file/fontBaru.woff') format('woff'), <br>
+            ('lokasi file/fontBaru.ttf') format('truetype'), <br>
+            ('lokasi file/fontBaru.svg#svgFontName') format('svg'), <br>
+  <br>
+  }
+  </p>
+  <h3>browser support <a href="http://www.w3schools.com/cssref/css3_pr_font-face_rule.asp"> Klik</a></h3>
+  <h3>layanan font</h3>
+  <ol id="font">
+    <li>fonts.google.com</li>
+    <li class="warna"> <a href="https://www.fontsquirrel.com"> fontsquirell.com</a></li>
+    <li>fontsprings.com</li>
+    <li>webtype.com</li>
+    <li>typotheque.com</li>
+    <li>dll</li>
+  </ol>
+  <h2>I Love You</h2>
+</body>
+</html>

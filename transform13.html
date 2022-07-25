@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Transformasi</title>
+  <style>
+    body {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      font-size: 20px;
+    }
+    .kotak {
+      width: 140px;
+      height: 140px;
+      background-color: lightblue;
+      margin: 50px auto 0;
+      transition: 1s;
+    }
+    .kotak:hover {
+      background-color: salmon;
+      transform: scale(3) rotate(360deg);
+    }
+  </style>
+</head>
+<body>
+  <h3>Transform pada CSS3</h3>
+  <p>Properti Transform memungkinkan kita dapat <b>memanipulasi format visual</b> dari elemen HTML. ada dua macam Transform pada CSS3 Yaitu 2D & 3D, tapi kali ini kita bahas yang 2D aja. Cara penulisan syntaxnya yaitu transform: fungsi.</p>
+  <b>Fungsi Transformasi</b>
+  <ul>
+    <li><b>Scale(angka), scaleX(angka), scaleY(angka)</b></li>
+    <p>memperbesar/memperkecil</p>
+    <li><b>rotate(deg), rotateX(deg), rotateY(deg)</b></li>
+    <p>memutar</p>
+    <li><b>skew(deg), skewX(deg), skewY(deg)</b></li>
+    <p>membuat condong/miring</p>
+    <li><b>translate(angka), translateX(angka), translateY(angka)</b></li>
+    <p>mengubah posisi</p>
+  </ul>
+  <div class="kotak"></div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, corporis expedita vel labore nisi cumque dicta sed culpa fugit eum reprehenderit nam odio temporibus, illo? Sint quibusdam laudantium provident consequatur.</p>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Linier Gradient</title>
+  <style>
+    body {
+      font-family: arial;
+    }
+    h4 {
+      text-align: center;
+    }
+    h6 {
+      text-align: center;
+      margin-top: -18px;
+    }
+    div {
+      width: 300px;
+      height: 150px;
+      margin: 50px auto;
+      /*background-image: radial-gradient(green,yellow);*/
+      background: radial-gradient(red,#f0d606,rgba(255,255,0,1),green);
+      /*sudut warna (deg = derajat) */
+      
+    }
+    /*ellipse*/
+    .satu {
+      width: 300px;
+      height: 150px;
+      margin: 50px auto;
+      background-image: radial-gradient(ellipse, green, yellow);
+    }
+    .dua {
+      width: 300px;
+      height: 150px;
+      margin: 50px auto;
+      background-image: radial-gradient(circle, green, gray);
+    }
+    /*jangkauan*/
+    .empat {
+      width: 300px;
+      height: 150px;
+      margin: 50px auto;
+      background-image: radial-gradient(circle farthest-corner, green, orange);
+    }
+    /*posisi*/
+    .lima {
+      width: 300px;
+      height: 150px;
+      margin: 50px auto;
+      background-image: radial-gradient(circle farthest-side at top left, green, red);
+    }
+    /* color stop */
+    .tiga {
+      width: 300px;
+      height: 150px;
+      margin: 50px auto;
+      background: radial-gradient(red 10%,green 20%,blue 80%);
+    }
+      
+  </style>
+</head>
+<body>
+  <h4>Bab 8 CSS3 | Materi Gradient & Penggunaanya</h4>
+  <h6><em>Ditulis Oleh : M Adi Tarmizi</em></h6>
+  <p>Gradient adalah teknik untuk memberikan warna gradasi pada elemen yang kita punya . Ada 2 tipe gradient yang kita gunakan yaitu linier gradient & radial gradient. Radial gradient yaitu memberikan gradasi warna secara melingkar.</p>
+  <em>sintaks sederhana</em>
+  <ul>
+    <li>background-image: radial-gradient(warna awal, warna akhir);</li>
+    <li>background-image: radial-gradient(
+      {tipe} {jangkauan} at {posisi-y} {posisi-x},{warna1}{warna2}....{warna-n}
+    );
+    </li>
+    <b>tipe</b>
+    <li>Ada 2 tipe yang digunakan yaitu ellipse & circle</li>
+    <b>jangkauan</b>
+    <li>jangkauan adalah jarak dari pusat gradient ke sisi terluarnya.</li>
+    <b>closest-corner</b>
+    <li>jarak dari pusat gradient ke <b>sudut terdekat</b> elemen</li>
+    <b>closest-side</b>
+    <li>jarak dari pusat gradient ke <b>sisi terdekat</b> elemen</li>
+    <b>farthest-corner</b>
+    <li>jarak dari pusat gradient ke<b>sudut terjauh</b> elemen</li>
+    <b>farthest-side</b>
+    <li>jarak dari pusat gradient ke<b>sisi terjauh</b> elemen</li>
+    <b>posisi</b>
+    <li>memindahkan pusat gradient</li>
+    <em>posisi-y</em>
+    <li>top,center,bottom = px</li>
+    <em>posisi-x</em>
+    <li>left,center,right = px</li>
+  </ul>
+  <!--tipe-->
+  <!--ellipse-->
+  <h4>Ellipse</h4>
+  <div class="satu"></div>
+  <!--circle-->
+  <h4>circle</h4>
+  <div class="dua"></div>
+  <!--jangkauan-->
+  <h4>jangkauan</h4>
+  <div class="empat"></div>
+  <!--posisi-->
+  <h4>posisi</h4>
+  <div class="lima"></div>
+  <h4>color stop</h4>
+  <div class="tiga"></div>
+  <h4>radial-gradient</h4>
+  <div></div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Linier Gradient</title>
+  <style>
+    body {
+      font-family: arial;
+    }
+    h4 {
+      text-align: center;
+    }
+    h6 {
+      text-align: center;
+      margin-top: -18px;
+    }
+    div {
+      width: 300px;
+      height: 150px;
+      margin: 50px auto;
+      /*background-image: linear-gradient(green,yellow);*/
+      /*background: linear-gradient(red,#f0d606,rgba(255,255,0,1),green);*/
+      /*sudut warna (deg = derajat) */
+      background: linear-gradient(to left bottom,yellow,green);
+    }
+    /* color stop */
+    .satu {
+      width: 300px;
+      height: 150px;
+      margin: 50px auto;
+      background: linear-gradient(to right,red 63%,green 90%);
+    }
+      
+  </style>
+</head>
+<body>
+  <h4>Bab 7 CSS3 | Materi Gradient & Penggunaanya</h4>
+  <h6><em>Ditulis Oleh : M Adi Tarmizi</em></h6>
+  <p>Gradient adalah teknik untuk memberikan warna gradasi pada elemen yang kita punya . Ada 2 tipe gradient yang kita gunakan yaitu linier gradient & radial gradient. linier gradient yaitu memberikan warna gradasi warna secara garis lurus. Sedangkan Radial gradient yaitu memberikan gradasi warna secara melingkar. <b>Linier gradient bukan properti CSS3 melainkan value untuk background-image.</b></p>
+  <em>sintaks sederhana</em>
+  <ul>
+    <li>background-image: linier-gradient(warna awal, warna akhir);</li>
+    <li>background: linier-gradient(sudut | arah , warna awal, warna akhir);</li>
+  </ul>
+  <p>Arah</p>
+  <ol>
+    <li>to bottom</li>
+    <li>to top</li>
+    <li>to left</li>
+    <li>to right</li>
+    <li>to left top</li>
+    <li>to left bottom</li>
+    <li>to right top</li>
+    <li>to right bottom</li>
+  </ol>
+  <h4>color stop</h4>
+  <div class="satu"></div>
+  <h4>linier-gradient</h4>
+  <div></div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Transition Part 2</title>
+  <style>
+    body {
+      background-color: lightgreen;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 400px;
+      border: 5px solid black;
+      
+    }
+    .kotak1 {
+      width: 100px;
+      height: 100px;
+      background-color: salmon;
+      text-align: center;
+      line-height: 100px;
+      margin: 5px 0;
+      transition:  all 3s ease;
+      
+    }
+    .kotak2 {
+      width: 100px;
+      height: 100px;
+      background-color: salmon;
+      text-align: center;
+      line-height: 100px;
+      margin: 5px 0;
+      transition:  all 3s ease-in;
+    }
+    .kotak3 {
+      width: 100px;
+      height: 100px;
+      background-color: salmon;
+      text-align: center;
+      line-height: 100px;
+      margin: 5px 0;
+      transition:  all 3s ease-out;
+    }
+    .kotak4 {
+      width: 100px;
+      height: 100px;
+      background-color: salmon;
+      text-align: center;
+      line-height: 100px;
+      margin: 5px 0;
+      transition:  all 3s ease-in-out;
+    }
+    .kotak5 {
+      width: 100px;
+      height: 100px;
+      background-color: salmon;
+      text-align: center;
+      line-height: 100px;
+      margin: 5px 0;
+      transition:  all 3s linear;
+    }
+    .kotak6 {
+      width: 100px;
+      height: 100px;
+      background-color: salmon;
+      text-align: center;
+      line-height: 100px;
+      margin: 5px 0;
+      transition:  all 3s cubic-bezier(0.24,-0.35, 0.78, 1.46);
+    }
+    .kotak7 {
+      width: 100px;
+      height: 100px;
+      background-color: salmon;
+      text-align: center;
+      line-height: 100px;
+      margin: 5px 0;
+      transition:  margin-left 3s, transform 3s 2s;
+    }
+    .container:hover .kotak {
+      transform: rotate(720deg);
+      background-color: lightskyblue;
+      margin-left: 310px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Transition Part 2 Pada CSS3</h3>
+  <p>Properti Transition/Perpindahan memungkinkan kita dapat mengubah nilai dari properti HTML secara Halus di dalam CSS3 ada 2 property yang mengubah nilainya secara Halus yaitu Transition & Animation, tapi yang membedakan keadan awal & keadan akhir. kalau transition hanya mempunyai nilai keadaan awal & akhir, tapi kalau animation punya nilai keadaan awal & akhir tetapi mempunyai keadaan diantaranya/mempunya 2 keadaan lebih. Cara penulisan syntaxnya berikut ini
+transition: (properti) (durasi => s/ms) (fungsi) (delay => s/ms);. properti, all, nama properti, none. </p>
+<p>Oke di part 2 ini saya akan membahas fungsi/timing function</p>
+<ul>
+  <li>ease</li>
+  <li>ease in</li>
+  <li>ease out</li>
+  <li>ease in out</li>
+  <li>linear</li>
+  <li>cubic-bezier(w,x,y,z)</li>
+</ul>
+<div class="container">
+  <div class="kotak kotak1">ease</div>
+  <div class="kotak kotak2">ease in</div>
+  <div class="kotak kotak3">ease out</div>
+  <div class="kotak kotak4">ease in out</div>
+  <div class="kotak kotak5">linear</div>
+  <div class="kotak kotak6">cubic-bezier</div>
+  <div class="kotak kotak7">delay</div>
+</div>
+</body>
+</html>

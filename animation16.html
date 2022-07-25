@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Animation</title>
+  <style>
+    .kotak {
+      width: 100px;
+      height: 100px;
+      background-color: salmon;
+      transition: 2s ease all;
+    }
+    .kotak:hover {
+      animation: animasiKotak 2s ease 2 alternate forwards;
+      background-color: lightblue;
+    }
+    @keyframes animasiKotak {
+      0% {
+        width: 200px;
+      }
+      50% {
+        width: 500px;
+        height: 200px;
+      }
+      100% {
+        width: 500px;
+        height: 500px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h3>Apa itu Animation</h3>
+  <p>Untuk pengertian sama dengan transition, tetapi kalau animation memiliki lebih dari 2 nilai. Contoh syntaxnya</p>
+  <b>
+    keyframes (name) {
+      from {
+        property-css
+      }
+      to {
+        properti-css
+      }
+    }
+  </b>
+  <p>animation: name durasi timing-function delay interation-count(angka | infinite) direction(normal | reverse | alternate | alternate-reverse) fill-mode(none | forwards | backwards | both) play-state(running | paused)</p>
+  <div class="kotak"></div>
+</body>
+</html>
